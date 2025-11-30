@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Grid Layout</title>
+    <!-- Correct path to Tailwind output -->
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+    <header>
+        <h1 class="text-2xl font-bold mb-4">Complex Grid Layout with Nested Grids</h1>
+    </header>
+
+    <!-- Main 2x2 grid -->
+    <main class="grid grid-cols-2 gap-4">
+
+        <!-- FIRST NESTED GRID (BLUE) -->
+        <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200">
+            <div class="bg-blue-400 p-2">Nested 1</div>
+            <div class="bg-blue-500 p-2">Nested 2</div>
+        </div>
+
+        <!-- SECOND NESTED GRID (RED) -->
+        <div class="grid grid-cols-2 p-4 gap-2 bg-red-200">
+            <div class="bg-red-400 p-2">Nested 3</div>
+            <div class="bg-red-500 p-2">Nested 4</div>
+        </div>
+
+        <!-- Content 3 -->
+        <div class="bg-green-200 p-4">Content 3</div>
+
+        <!-- Content 4 -->
+        <div class="bg-yellow-200 p-4">Content 4</div>
+
+    </main>
+
+</body>
+</html>
